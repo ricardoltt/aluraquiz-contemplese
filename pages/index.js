@@ -4,13 +4,7 @@ import Widget from '../src/components/Widget'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import Link from 'next/link'
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -22,6 +16,11 @@ export const QuizContainer = styled.div`
     padding: 15px;
   }
 `;
+
+const StyleLink = {
+  textDecoration: 'none',
+  color: 'gray',
+};
 
 export default function Home() {
   return (
@@ -41,11 +40,14 @@ export default function Home() {
             <h1>Quizes da Galera</h1>
 
             <p>Acompanhe aqui os "Quizes" gerado pela comunidade!</p>
+            <Link href="/quiz">
+              <a style={StyleLink}>Ir para Quiz</a>
+            </Link>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/ricardoltt" />
+      <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" />
     </QuizBackground>
   );
 }
