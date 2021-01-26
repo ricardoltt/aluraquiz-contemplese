@@ -1,12 +1,14 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import Link from 'next/link'
+/* eslint-disable linebreak-style */
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import QuizBackground from '../src/components/QuizBackground';
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -17,29 +19,36 @@ export const QuizContainer = styled.div`
   }
 `;
 
-const StyleLink = {
-    textDecoration: 'none',
-    color: 'gray',
-};
-
 export default function Quiz() {
-    return (
+  const [nameQuiz, setNameQuiz] = useState('');
+  const router = useRouter();
 
-        <QuizBackground backgroundImage={db.bg}>
-        <QuizContainer>
-            <Widget>
-            <Widget.Content>
-                <h1>Quizes da Galera</h1>
+  useEffect(() => {
+    const { name } = router.query;
+    if (!name) router.push('/');
 
-                <p>Aguarde...</p>
-                <Link href="/">
-                    <a style={StyleLink}>Voltar para a Home</a>
-                </Link>              
-            </Widget.Content>
-            </Widget>
-            <Footer />
-        </QuizContainer>
-        <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" />
-        </QuizBackground>
-    );
+    setNameQuiz(name);
+  }, []);
+
+  return (
+    <QuizBackground backgroundImage={db.bg}>
+      <QuizContainer>
+        <Widget>
+          <Widget.Header>
+            <h1>Página em Construção!</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <p>
+              Olá
+              {' '}
+              {nameQuiz}
+              , volte em breve para fazer o Quiz!
+            </p>
+          </Widget.Content>
+        </Widget>
+        <Footer />
+      </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" />
+    </QuizBackground>
+  );
 }
