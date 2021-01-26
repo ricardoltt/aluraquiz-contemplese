@@ -8,7 +8,7 @@ O objetivo da imersão é desenvolver uma aplicação de um Quiz, de qualquer te
 
 O meu Quiz foi baseado no trabalho da nutricionista do [@contemple.se](https://www.instagram.com/contemple.se/), que é especializada em Comportamento Alimentar. Nessa primeira aula criamos a primeira página e upamos com a ajuda do Vercel. Confira [aqui!](https://quiz-contemplese.ricardoltt.vercel.app/)
 
-![Gif da tela]()
+![Gif da tela](https://github.com/ricardoltt/aluraquiz-contemplese/blob/main/src/gifQuiz.gif)
 
 
 
