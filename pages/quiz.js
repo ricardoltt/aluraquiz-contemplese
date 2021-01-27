@@ -48,7 +48,7 @@ export default function Quiz() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" />
+      <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" target="_blank" />
     </QuizBackground>
   );
 }
