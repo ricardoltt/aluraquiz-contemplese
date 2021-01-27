@@ -62,8 +62,8 @@ export default function Home() {
             <p>Acompanhe aqui os Quizes gerado pela comunidade!</p>
           </Widget.Content>
         </Widget>
-        <Footer />
       </QuizContainer>
+      <Footer />
       <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" target="_blank" />
     </QuizBackground>
   );

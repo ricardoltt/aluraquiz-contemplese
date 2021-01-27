@@ -7,6 +7,7 @@ import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import QuizLogo from '../src/components/QuizLogo';
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -46,8 +47,9 @@ export default function Quiz() {
             </p>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <QuizLogo />
       </QuizContainer>
+      <Footer />
       <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" target="_blank" />
     </QuizBackground>
   );

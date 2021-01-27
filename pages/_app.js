@@ -14,12 +14,13 @@ const GlobalStyle = createGlobalStyle`
     /* New styles */
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     // Deixa branco no começo
     color: ${({ theme }) => theme.colors.contrastText};
   }
   html, body {
     min-height: 100vh;
+    height: 100%;
   }
   #__next {
     flex: 1;
@@ -36,9 +37,11 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>{db.title}</title>
-        {/* Favicon */}
+        {/* Fontes */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
         <meta property="og:image" content={db.bg} />
         {/* Open Graph */}
         <meta property="og:image" content={db.bg} key="ogimage" />
