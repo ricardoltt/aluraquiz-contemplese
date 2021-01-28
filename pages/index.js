@@ -7,8 +7,9 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -40,14 +41,15 @@ export default function Home() {
           <Widget.Content>
             <p>{db.description}</p>
             <form onSubmit={handleSubmit}>
-              <input
+              <Input
                 type="text"
+                name="NomeDoUsuário"
                 value={name}
                 autoCapitalize=""
                 min={3}
-                onChange={(e) => setName(e.target.value)}
                 required
                 placeholder="Digite seu nome para jogar!"
+                onChange={(e) => setName(e.target.value)}
               />
               <button type="submit" disabled={name.length === 0}>
                 Jogar!
