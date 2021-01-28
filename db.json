@@ -1,66 +1,61 @@
 {
     "bg": "https://i.ibb.co/SK8qYN4/Quiz-da-contemple-se-1.png",
-    "title": "Quiz sobre Comportamento Alimentar!",
-    "description": "Teste os seus conhecimentos sobre Comportamento Alimentar!",
+    "title": "Quiz sobre Relação com a Comida",
+    "description": "Teste os seus conhecimentos sobre relacionamento com a comida!",
     "questions": [
       {
         "image": "https://instagram.fbfh14-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/75138664_176379673485872_5985078215594785197_n.jpg?_nc_ht=instagram.fbfh14-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=p32G6XhOK14AX-pHSHX&tp=1&oh=4fad6bfc9f3c60a9f691d95fa60ea67a&oe=603AD387",
-        "title": "O que é Nutrição Gentil?",
-        "description": "O que é Nutrição Gentil?",
+        "title": "Para praticar uma alimentação saudável você deve:",
         "answer": 2,
         "alternatives": [
-          "Alternativa 1",
-          "Alternativa 2",
-          "Alternativa 3",
-          "Alternativa 4"
+          "Comer somente orgânicos",
+          "Excluir todos os ultraprocessados da rotina",
+          "Respeitar seu corpo e necessidades, se permitindo comer de tudo",
+          "Comer de 3 em 3 horas"
         ]
       },
       {
         "image": "https://instagram.fbfh14-1.fna.fbcdn.net/v/t51.2885-15/e35/142094561_1570791616464511_9114394406178017439_n.jpg?_nc_ht=instagram.fbfh14-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=5dmtCPOK9pwAX8IL2zq&tp=1&oh=9a897f302714e619bbbc02258b962adc&oe=603B0377",
-        "title": "Qual a diferença entre alimentos que saciam x saciedade?",
-        "description": "Qual a diferença entre alimentos que saciam x saciedade?",
-        "answer": 2,
+        "title": "Uma forma de você saber a quantidade de comida suficiente pra você é:",
+        "answer": 1,
         "alternatives": [
-          "Alternativa 1",
-          "Alternativa 2",
-          "Alternativa 3",
-          "Alternativa 4"
-        ]
-      },
-      {
-        "image": "https://instagram.fbfh14-1.fna.fbcdn.net/v/t51.2885-15/e35/141398554_185128733303042_5607332512410028848_n.jpg?_nc_ht=instagram.fbfh14-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=dQBE9e3-A6YAX-yDWju&tp=1&oh=da07a95be5764854c19a374d155de54e&oe=603A1610",
-        "title": "Voce consegue identificar quando está saciado?",
-        "description": "Voce consegue identificar quando está saciado?",
-        "answer": 2,
-        "alternatives": [
-          "Alternativa 1",
-          "Alternativa 2",
-          "Alternativa 3",
-          "Alternativa 4"
+          "Comer somente uma quantidade de comida estipulada por alguém",
+          "Respeitar meu sinal de saciedade e o contexto da refeição",
+          "O suficiente pra mim é muito, já o ideal pra mim é comer pouco sempre",
+          "Seguindo a risca as orientações de quantidades de porções presentes em manuais de saúde"
         ]
       },
       {
         "image": "https://instagram.fbfh14-2.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/128065488_306498897149700_4916096189387520150_n.jpg?_nc_ht=instagram.fbfh14-2.fna.fbcdn.net&_nc_cat=100&_nc_ohc=omlRZTHgAUIAX-foVbK&tp=1&oh=5499a1c3264e28a22f180275586d2c5c&oe=603AD2E3",
-        "title": "Comer demais, o que está por trás disso?",
-        "description": "Comer demais, o que está por trás disso?",
+        "title": "O que te leva a comer o que você come?",
         "answer": 2,
         "alternatives": [
-          "Alternativa 1",
-          "Alternativa 2",
-          "Alternativa 3",
-          "Alternativa 4"
+          "Maus hábitos e paladar infantil",
+          "As dietas que eu faço",
+          "Minha história com a comida, crenças, traumas, histórico de saúde, cultura e contextos",
+          "Minha nutri"
         ]
       },
       {
         "image": "https://instagram.fbfh14-2.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/101183575_113477640181335_7945025687553430946_n.jpg?_nc_ht=instagram.fbfh14-2.fna.fbcdn.net&_nc_cat=103&_nc_ohc=skLHgOMRlWIAX-lRk1j&tp=1&oh=d4ada1c4b39b9ee09f89f6630bf326dd&oe=603B4369",
-        "title": "Será que tenho compulsão por doces?",
-        "description": "Será que tenho compulsão por doces?",
-        "answer": 2,
+        "title": "Perder o controle diante da comida é um sinal de:",
+        "answer": 0,
         "alternatives": [
-          "Alternativa 1",
-          "Alternativa 2",
-          "Alternativa 3",
-          "Alternativa 4"
+          "Transtorno alimentar ou comer transtornado",
+          "Falta de controle e força de vontade",
+          "Um sinal de que gosto muito de comer",
+          "Que doces são viciantes"
+        ]
+      },
+      {
+        "image": "https://instagram.fbfh14-2.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/125568497_3678287992257773_7520605232176145007_n.jpg?_nc_ht=instagram.fbfh14-2.fna.fbcdn.net&_nc_cat=105&_nc_ohc=ig12i5YtlY0AX-y4-bG&tp=1&oh=d2c62066b51659059515ebb68588679a&oe=603D2A96",
+        "title": "Como meu atendimento focado em comportamento alimentar pode te ajudar?",
+        "answer": 1,
+        "alternatives": [
+          "Te encorajando a comer muito doce e o que mais quiser, quando quiser, sem critérios",
+          "Te guiando em um processo de autoconhecimento, onde você aprende a fazer as próprias escolhas alimentares",
+          "Te dizendo o quanto e quando comer",
+          "Passando um plano alimentar que tenha doces e frituras"
         ]
       }
     ],

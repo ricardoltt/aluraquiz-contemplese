@@ -15,6 +15,19 @@ const InputBase = styled.input`
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
+      ::-webkit-input-placeholder {
+        color: ${({ theme }) => theme.colors.contrastText};
+      }
+      :-moz-placeholder {
+        color: ${({ theme }) => theme.colors.contrastText};
+      }
+      ::-moz-placeholder {
+        color: ${({ theme }) => theme.colors.contrastText};
+        
+      }
+      :-ms-input-placeholder {  
+        color: ${({ theme }) => theme.colors.contrastText};
+      }
 `;
 
 export default function Input({ onChange, placeholder, ...props }) {
