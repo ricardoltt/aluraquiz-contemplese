@@ -2,10 +2,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -25,7 +27,7 @@ function LoadingWidget() {
         Carregando!
       </Widget.Header>
       <Widget.Content>
-        <img alt="gif loading" src="https://pa1.narvii.com/6618/579af2d8df43ca612e38b09a103bcde82b7d92aa_00.gif" />
+        <img alt="gif loading" src="https://pa1.narvii.com/6618/579af2d8df43ca612e38b09a103bcde82b7d92aa_00.gif" style={{ width: '100%' }} />
       </Widget.Content>
     </Widget>
   );
@@ -50,7 +52,7 @@ function QuestionWidget({
         alt="Descrição"
         style={{
           width: '100%',
-          height: '150px',
+          height: '100%',
           objectFit: 'cover',
         }}
         src={question.image}
@@ -125,7 +127,6 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
@@ -138,7 +139,9 @@ export default function QuizPage() {
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
+        <QuizLogo />
       </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/ricardoltt/aluraquiz-contemplese" target="_blank" />
     </QuizBackground>
   );
 }
