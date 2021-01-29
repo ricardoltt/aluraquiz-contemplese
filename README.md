@@ -70,6 +70,35 @@ Aprendemos como lidar com os estados (*states*) do **React** através dos **Reac
 
   </details>
 
+  ## Terceira Aula
+
+  <details><summary><b>Conteúdo detalhado da terceira aula:</b></summary>
+
+  </details>
+
+  ## Quarta Aula
+
+  <details><summary><b>Conteúdo detalhado da quarta aula:</b></summary>
+
+  </details>
+
+  ## Quinta Aula
+
+  Para fechar, vamos usar os poderes do Next.js para criar conteúdos dinâmicos a partir de templates e fazer o gerenciamento destas páginas. Para arrematar, as animações com Framer Motion vão dar movimento para a montagem dos componentes.
+
+<details><summary><b>Conteúdo detalhado da quinta aula:</b></summary>
+ - Listar endereços dos quizes da galera na página principal, a partir do arquivo db.json
+ - Reaproveitar o componente de Widget
+ - Acrescentar botões para os quizes da galera
+ - Criar rotas com parâmetros dinâmicos com Next.js
+ - Usar métodos de otimização por SSR para criar páginas dinâmicas
+ - Trabalhar com promessas utilizando a Fetch API e Promises
+ - Organizar o projeto com a pasta screens para definir leiautes de páginas
+ - Passar para a página de quiz as props dos quizes externos
+ - Usar o Framer Motion para criar animações de entrada para os widgets
+
+  </details>
+
 
 
 ### 💻 Tecnologias utilizadas
