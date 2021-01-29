@@ -9,7 +9,7 @@ export default function LoadingWidget() {
         <h1>Carregando!</h1>
       </Widget.Header>
       <Widget.Content>
-        <img alt="gif loading" src="https://static.wikia.nocookie.net/cuphead7697/images/7/72/Cuphead_befaffled.gif/revision/latest/top-crop/width/300/height/300?cb=20180520212413&path-prefix=pt-br" style={{ width: '100%' }} />
+        <img alt="gif loading" src="https://pa1.narvii.com/6500/badbd25038bd44dd7138223221409df6b8d36f64_hq.gif" style={{ width: '100%' }} />
       </Widget.Content>
     </Widget>
   );
