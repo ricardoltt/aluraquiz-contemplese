@@ -1,34 +1,14 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import styled from 'styled-components';
-import '../node_modules/font-awesome/css/font-awesome.min.css';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import GitHubCorner from '../src/components/GitHubCorner';
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
-const ArrowPrev = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" style={{ marginRight: '10px' }}>
-    <path
-      d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"
-      fill="currentColor"
-      stroke="currentColor"
-    />
-  </svg>
-);
+import '../../node_modules/font-awesome/css/font-awesome.min.css';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import AlternativesForm from '../../src/components/AlternativesForm';
 
 function ResultWidget({ results }) {
   return (
@@ -81,7 +61,6 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        <ArrowPrev />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -101,28 +80,33 @@ function QuestionWidget({
           {question.title}
         </h2>
 
-        <form
+        <AlternativesForm
           onSubmit={(infosDoEvento) => {
             infosDoEvento.preventDefault();
             setQuestionSubmitted(true);
             setTimeout(() => {
               addResult(isCorrect);
-              onSubmit();
               setQuestionSubmitted(false);
               setselectedAlternative(undefined);
+              onSubmit();
             }, 1 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
+            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+            const isSelected = selectedAlternative === alternativeIndex;
             return (
               <Widget.Topic
                 as="label"
                 key={alternativeId}
                 htmlFor={alternativeId}
+                // eslint-disable-next-line react/jsx-boolean-value
+                data-selected={isSelected}
+                data-status={QuestionSubmitted && alternativeStatus}
               >
                 <input
-                  // style={{ display: 'none' }}
+                  style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   onChange={() => setselectedAlternative(alternativeIndex)}
@@ -138,7 +122,7 @@ function QuestionWidget({
           {QuestionSubmitted && isCorrect && <p>Acertou!</p>}
           {QuestionSubmitted && !isCorrect && <p>Errou :/</p>}
 
-        </form>
+        </AlternativesForm>
       </Widget.Content>
     </Widget>
   );

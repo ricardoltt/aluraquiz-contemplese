@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
