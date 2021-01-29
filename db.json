@@ -61,7 +61,8 @@
     ],
     "external": [
       "https://naruto-quiz.llofyy.vercel.app/",
-      "https://lotr-quiz.filipe1309.vercel.app/"
+      "https://lotr-quiz.filipe1309.vercel.app/",
+      "https://typequiz.caducarvalho.vercel.app/"
     ],
     "theme": {
       "colors": {

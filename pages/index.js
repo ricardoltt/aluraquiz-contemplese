@@ -80,6 +80,7 @@ export default function Home() {
 
               return (
                 <Widget.Topic
+                  key={linkExterno}
                   href={`/quiz/${projectName}___${githubUser}`}
                 >
                   {`${githubUser}/${projectName}`}

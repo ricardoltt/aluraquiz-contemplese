@@ -5,6 +5,7 @@ import Widget from '../../components/Widget';
 import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
+import LoadingWidget from '../../components/LoadingScreen';
 
 function ResultWidget({ results }) {
   return (
@@ -34,20 +35,6 @@ function ResultWidget({ results }) {
             </li>
           ))}
         </ul>
-      </Widget.Content>
-    </Widget>
-  );
-}
-
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        Carregando
       </Widget.Content>
     </Widget>
   );

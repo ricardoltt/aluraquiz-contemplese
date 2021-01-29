@@ -8,7 +8,7 @@ const FooterWrapper = styled.footer`
   background-color: rgb(22 51 34 / 55%);
   padding: 10px;
   display: relative;
-  position: absolute;
+  // position: absolute;
   bottom:0;
   width:100%;
   @media screen and (max-width: 500px) {
@@ -40,7 +40,9 @@ const FooterWrapper = styled.footer`
       }
   }
   }
-
+  #logoAlura:hover {
+    opacity: 0.5;
+  }
   .fa {
     font-size: 36px;
     margin-right: 15px;
@@ -85,6 +87,7 @@ export default function Footer(props) {
     <FooterWrapper {...props}>
       <div className="footer-social">
         <a
+          id="logoAlura"
           href="https://www.alura.com.br/"
           target="_blank"
           className="social-icons"
