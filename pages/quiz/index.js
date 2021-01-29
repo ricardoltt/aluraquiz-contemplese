@@ -31,8 +31,6 @@ function ResultWidget({ results }) {
             }
             return somatoriaAtual;
           }, 0)}
-
-          {' '}
           .
         </h1>
       </Widget.Header>
